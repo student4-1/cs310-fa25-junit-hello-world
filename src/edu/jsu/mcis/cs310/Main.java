@@ -17,7 +17,13 @@ public class Main {
     }
     
     public String reverse(String message) {
-        return message;
+        //The intended action is to reverse the string we get here, I think.
+        //We were told to use a StringBuilder instead of appending characters into a new string.
+        StringBuilder invMessage = new StringBuilder();
+        //But I'm not sure how we would get the characters into the StringBuilder to begin with without it.
+        invMessage.append(message);
+        invMessage.reverse();
+        return invMessage.toString(); //I don't want to make a second String object just to return it.
     }
     
 }
